@@ -29,3 +29,11 @@ def unicos(lista_valores: List[int]) -> int:
 
 lista : List[float] = [1, 2, 3, 4, 5, 5, 7, 8, 9, 10]
 print(unicos(lista))
+
+# EX 4
+
+def celsius_to_fahrenheit_list(lista_temperaturas: List[float]) -> float:
+    return [(9/5) * temp + 32 for temp in lista_temperaturas]
+
+lista : List[float] = [21, 40, 34, 38, 12]
+print(celsius_to_fahrenheit_list(lista))
