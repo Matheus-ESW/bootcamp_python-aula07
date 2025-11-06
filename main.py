@@ -48,3 +48,13 @@ def desvio_padrao(lista_valores: List[float]) -> float:
 
 lista : List[float] = [1, 2, 3, 4, 5, 5, 7, 8, 9, 10]
 print(desvio_padrao(lista))
+
+# EX 6
+
+def valores_ausentes(lista_sequencial: List[float]) -> List[float]:
+    completo = set(range(min(lista_sequencial), max(lista_sequencial) + 1))
+
+    return list(completo - set(lista_sequencial))
+
+lista : List[float] = [1, 2, 3, 4, 5, 5, 7, 8, 9, 10]
+print(valores_ausentes(lista))
